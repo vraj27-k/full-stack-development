@@ -1,0 +1,34 @@
+<!-- write code to increase the font size in 1000ms till 50 pixels -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="1">
+        Hello Click below to see the increased font size.
+    </p>
+    <button onclick="fun1()">Click here to increase the font size</button>
+    <button onclick="fun2()">Click here to decrease the font size</button>
+    <button onclick="stop()">Stop</button>
+ </body>
+ <script>
+    var font=16;
+    function fun(font) {
+        document.getElementById("1").style.fontSize =font+ "px";
+    }
+    function fun1(){
+   test= setInterval(()=>{
+        if (font<=100){fun(font++)}},1000);
+    }
+    function fun2(){
+    test=setInterval(()=>{
+        if (font>15){fun(font--)}},1000);
+    }
+    function stop(){
+        clearInterval(test);
+    }
+ </script>
+ </html>

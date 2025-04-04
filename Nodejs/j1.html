@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function call(){
+            var a='{"dob":"2005-08-27"}';
+            var obj = JSON.parse(a);
+            document.getElementById("v1").innerHTML = new Date(obj.dob);
+        }
+    </script>
+</head>
+<body>
+    <h1 id="v1">Get date</h1>
+    <button onclick="call()">click here</button>
+</body>
+</html>

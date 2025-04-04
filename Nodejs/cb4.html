@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <p id="p1"></p>
+    
+</body>
+<script>
+    function display(sum){
+        document.getElementById("p1").innerHTML =sum;
+    }
+    function calculate(num1, num2,callback){
+        sum=num1+num2;
+        callback(sum);
+    }
+    calculate(13, 17, display);
+</script>
+</html>
