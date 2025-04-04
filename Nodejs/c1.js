@@ -1,11 +1,5 @@
-const msg=function(){
-    console.log("Hello World");
-}
-setTimeout(msg,5000);
-setTimeout(function(){
-    console.log("This is a callback function");
-},3000);
-
-setTimeout(()=>{
-    console.log("This is a lambda function");
-},2000);
+import chalk from "chalk";
+const log=console.log;
+log("LJU");
+log("hello"+chalk.bgCyan("world"));
+log(chalk.blue.underline.bgYellow("Testing")+chalk.red.bold.italic.underline.bgWhite("Test"));

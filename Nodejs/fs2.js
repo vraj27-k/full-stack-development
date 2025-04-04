@@ -4,3 +4,8 @@ data=fs.readFileSync("node/sort.txt","utf8");
 d=data.split(" ");
 d1=d.sort((a,b)=>a-b);
 console.log(d1);
+let arr=[];
+for (let i=0; i<d1.length; i++){
+    arr[i]=parseInt(d1[i])
+}
+console.log(arr);
